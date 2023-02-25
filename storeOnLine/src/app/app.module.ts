@@ -20,13 +20,15 @@ import { AngularFireModule} from '@angular/fire/compat';
 /* Angular Material */
 import { MatButtonModule} from '@angular/material/button';
 import { MatIconModule} from '@angular/material/icon';
+import { IndexComponent } from './index/index.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     LoginComponent,
-    RegistroComponent
+    RegistroComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,
