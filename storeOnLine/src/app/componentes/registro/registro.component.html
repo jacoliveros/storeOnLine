@@ -1,0 +1,13 @@
+<h3 class="text-center">Iniciar Session</h3>
+<form class="container-fluid">
+    <div class="form-group">
+        <label for="exampleInputEmail">Correo</label>
+        <input type="email" class="form-control" id="exampleInputEmail" aria-describesby="emailHelp" #user>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword">Contraseña</label>
+        <input type="password" class="form-control" id="exampleInputPassword" #pass>
+    </div>
+    <button type="button" class="btn btn-primary btn-block" (click)="auth.Registro(user.value,pass.value)">Registrase</button>
+
+</form>

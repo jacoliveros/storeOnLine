@@ -1,0 +1,17 @@
+<h3 class="text-center">Iniciar Session</h3>
+<form class="container-fluid">
+    <div class="form-group">
+        <label for="exampleInputEmail">Correo</label>
+        <input type="email" class="form-control" id="exampleInputEmail" aria-describesby="emailHelp" #user>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword">Contraseña</label>
+        <input type="password" class="form-control" id="exampleInputPassword" #pass>
+    </div>
+    <button type="button" class="btn btn-primary btn-block" (click)="auth.IniciarConEmailPass(user.value,pass.value)">Iniciar</button>
+    <button type="button" class="btn btn-primary btn-block" (click)="auth.GoogleAuth()" > Iniciar con Google</button>
+    <!--<button type="button" class="btn btn-danger btn-block" (click)="auth.FaceBookAuth()" > Iniciar con FaceBook</button>--->
+    <!--<button type="button" class="btn btn-danger btn-block" (click)="auth.GitHubAuth2()" > Iniciar con GitHub</button>-->
+    
+
+</form>
